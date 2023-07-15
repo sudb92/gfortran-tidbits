@@ -14,6 +14,7 @@ subroutine mainloop(ret)
    intrpt=0
    ret=0
    cret=achar(13)
+   call date_and_time(TIME=wtime)
    call srand(nint(wtime_r))
    call signal(2,errhandler)
    print *,"Starting 20 sec loop.."
