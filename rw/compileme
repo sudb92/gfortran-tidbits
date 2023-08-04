@@ -1,0 +1,8 @@
+#!/bin/bash
+rm server client
+gcc -c ttyinit.c
+gfortran -c server.f90
+gfortran -c client.f90
+gfortran -o server server.o ttyinit.o
+gfortran -o client client.o ttyinit.o
+rm *.o
