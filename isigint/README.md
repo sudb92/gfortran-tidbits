@@ -1,6 +1,3 @@
-# gfortran-tidbits
-A few example programs that help me remember some helpful gfortran tricks
-
 <h5>sigint.f90</h5>
 
 *  Demonstrates a clean implementation of the pure fortran signal() routine
