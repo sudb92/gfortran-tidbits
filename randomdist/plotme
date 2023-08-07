@@ -1,0 +1,9 @@
+set term x11 1 persist enhanced font '*-terminus-*-r-*-*-*-*-*-*-*-*-*-*-' noraise
+set yrange [0:.012]
+set xrange [-.01:1.01]
+set grid
+set xlabel '100 Bins,x=[0,1]'
+set ylabel 'Freq/N_{total}'
+set title 'Gfortran: random\_number()'
+plot '/tmp/t1234' u (($0+0.5)*0.01):1 w boxes fill pattern 2 lc 7 notitle
+reread
