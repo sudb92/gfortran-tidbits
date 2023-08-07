@@ -1,7 +1,7 @@
 randomdist.f90
 --------------
   * Use-case for ```associate```
-  * No-waiting command-line call that starts a gnuplot routine simultaneous to the loop
+  * No-waiting/non-blocking command-line call that starts a gnuplot routine simultaneous to the loop
   * Simple histogramming method, use of rewind() and flush() to update the histogram in real-time
   * Compile using ```gfortran randomdist.f90``` as usual
   * Sample output image below
