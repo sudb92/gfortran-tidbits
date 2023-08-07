@@ -1,2 +1,0 @@
-#!/bin/bash
-./a.out | feedgnuplot --histogram 0  --binwidth 0.01 --stream 0.1 --xmin -0.01 --xmax 1.01 --histstyle fnormal --term "x11 noraise title 'random() distribution in fortran'"
