@@ -1,0 +1,5 @@
+# needs to be run as 'gnuplot -e m=<slope val> -e b=<intercept val> plotme'
+set term png
+set output 'out.png'
+set key top left
+plot 'output' w p, m*x+b
